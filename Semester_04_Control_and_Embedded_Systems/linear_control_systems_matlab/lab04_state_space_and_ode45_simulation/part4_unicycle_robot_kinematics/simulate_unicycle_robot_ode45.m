@@ -1,0 +1,10 @@
+clc;
+clear;
+tspan=[1 20];
+x0=[2 2 0];
+[t,x] = ode45(@(t,x)ode_unicycle_robot_kinematics(t,x), tspan, x0);
+plot(t,x);
+title("Unicycle Mobile Robot Kinematics via ODE45");
+xlabel("Time (s)");
+ylabel("Robot Pose [x, y, theta]");
+grid on;

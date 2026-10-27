@@ -1,0 +1,49 @@
+
+# dsa definition , algorithm analysis required why? , 
+# two types of analysis , one problem many solution , which solution effiecient , time complexity
+# drawbacks of one analysis (postrakl something) , first case complexity
+# !d array , 2D array , avg , summsion and other operations
+# stacks - pop and push lifo , parenthesis , stack using array , stack using linked list , using array
+# queue - filo , circular queue ,time sharing operating system , round robin , using linked list , usng array
+# single linked list - advatanges , implementations , polynomial using linked list adding polynomial 
+# linear , binary search 
+# sorting - complexitys , merge and quick sort . advantages
+
+
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+class LL:
+    def __init__(self):
+        self.head = None
+
+    def add(self,data):
+
+        newNode = Node(data)
+        if self.head is None:
+            self.head = newNode
+            newNode.next = None
+
+        ptr = self.head
+        while ptr.next is not None:
+            ptr = ptr.next
+        ptr.next = newNode
+        newNode.next = None
+
+    def display(self):
+        ptr = self.head 
+
+        while ptr.next is not None:
+            print(ptr.data)
+            ptr = ptr.next
+        print(ptr.data)
+
+    def delete(self, data):
+        
+
+l = LL()
+l.add(1)
+l.add(2)
+l.display()

@@ -1,0 +1,10 @@
+clc;
+clear;
+tspan=[1 20];
+x0=[1 2];
+[t,x] = ode45(@(t,x)ode_second_order_system(t,x), tspan, x0);
+plot(t,x);
+title("Second-Order State-Space Response via ODE45");
+xlabel("Time (s)");
+ylabel("State Trajectories");
+grid on;

@@ -1,0 +1,111 @@
+# ==============================================================================
+# Git Ignore - Engineering Coursework (C, Python, Embedded Systems)
+# ==============================================================================
+
+# --- Archives & Backups ---
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.bak
+*.backup
+*~
+
+# --- Operating System & Editor Artifacts ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- C / C++ Build Artifacts (GCC, Clang, MSVC) ---
+*.o
+*.obj
+*.out
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.i
+*.s
+*.gch
+*.dSYM/
+build/
+bin/
+
+# --- Python Artifacts ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Embedded Systems / Keil / IAR / STM32 / 8051 Artifacts ---
+*.hex
+*.bin
+*.elf
+*.axf
+*.map
+*.lst
+*.m51
+*.crf
+*.d
+*.lnp
+*.sct
+*.dep
+*.build_log.htm
+*.htm
+*.__i
+*.uvgui.*
+*.uvopt*
+*.uvproj*backup
+*.saved_uv4
+*.plg
+*.iex
+*.pbi
+*.pbd
+*.browse
+*.lin
+*.symbols
+
+# --- Proteus & Circuit Simulation Artifacts ---
+*.pdsbak
+*.workspace
+*.pdsprj.bak
+*.SimCache
+*.SimData
+*.DSN.bak
+
+# --- MATLAB & Simulink Artifacts ---
+*.asv
+*.m~
+*.slxc
+slprj/
+*.autosave
